@@ -20,14 +20,13 @@ class App extends Component {
   addTodo(event) {
     event.preventDefault();
     let text = this.refs.name.value;
-    let id = Math.floor((Math.random()* 100) + 1);
+    let id = Math.floor((Math.random()* 100000) + 1);
     this.setState({
       allTodo: this.state.allTodo.concat({id, text})
     });
 
     this.refs.name.value = '';
-    localStorage.setItem('myTodo', JSON.stringify(this.state.allTodo);
-    console.log(this.state.allTodo);
+
   }
 
 
@@ -40,19 +39,19 @@ class App extends Component {
 
     return (
       <div className="main">
-        <h3>{`My Todo list`} </h3>
+        <h3>{`Student Unique Number Generator`} </h3>
         <form onSubmit={this.addTodo.bind(this)}>
           <input type='text' ref='name'
             className='input'
           />
-          <button type="submit">Generate Unique Number</button>
+          <button type="submit">{`Generate Numbers`}</button>
        </form>
        <section className="todoList">
            <div className="todoName">
-             <h3>Student Unique Number Generator</h3>
+             <h3>{`Student Name`}</h3>
            </div>
            <div className="action">
-             <h3>Number</h3>
+             <h3>{`Number`}</h3>
            </div>
        </section>
        {myTodo.map((newTodo)=> {

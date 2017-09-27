@@ -6,7 +6,7 @@ const Todos = ({id, text}) => (
       {text}
     </div>
     <div className="action">
-      {id}
+      #{id}
     </div>
   </section>
 )
