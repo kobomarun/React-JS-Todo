@@ -1,0 +1,36 @@
+.main {
+  width: 600px;
+  margin: auto;
+  border: 1px solid;
+  padding: 20px;
+}
+h3 {
+
+}
+
+.input {
+  width: 250px;
+  height: 25px;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.todoList {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.todoName {
+  font-family: sans-serif;
+  border-bottom: 2px dotted #eee;
+  margin-bottom: 20px;
+}
