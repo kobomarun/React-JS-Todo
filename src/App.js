@@ -26,7 +26,7 @@ class App extends Component {
     });
 
     this.refs.name.value = '';
-    localStorage.setItem('myTodo', JSON.stringify(this.state.allTodo));
+    localStorage.setItem('myTodo', JSON.stringify(this.state.allTodo);
     console.log(this.state.allTodo);
   }
 
@@ -45,11 +45,11 @@ class App extends Component {
           <input type='text' ref='name'
             className='input'
           />
-          <button type="submit">Add New Todo</button>
+          <button type="submit">Generate Unique Number</button>
        </form>
        <section className="todoList">
            <div className="todoName">
-             <h3>Todo List</h3>
+             <h3>Student Unique Number Generator</h3>
            </div>
            <div className="action">
              <h3>Number</h3>
