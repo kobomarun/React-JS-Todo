@@ -6,6 +6,7 @@ const Textinput = ({type, name}) => (
     type={type}
     ref={name}
     className="input"
+    placeholder="Enter your student Name"
   />
 );
 
